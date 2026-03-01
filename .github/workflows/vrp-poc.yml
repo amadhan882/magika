@@ -4,7 +4,9 @@ jobs:
   exploit:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
       - name: Proof of Code Execution
         run: |
           chmod +x ./cli-latest
